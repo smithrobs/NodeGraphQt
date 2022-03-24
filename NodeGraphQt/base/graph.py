@@ -1683,7 +1683,7 @@ class NodeGraph(QtCore.QObject):
                 nodes_rank[n] = max(nodes_rank[n], rank)
             else:
                 nodes_rank[n] = rank
-            NodeGraph._update_node_rank(n, nodes_rank, down_stream)
+                NodeGraph._update_node_rank(n, nodes_rank, down_stream)
 
     @staticmethod
     def _compute_node_rank(nodes, down_stream=True):
